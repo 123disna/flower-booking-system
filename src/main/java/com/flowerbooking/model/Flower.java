@@ -2,6 +2,7 @@ package com.flowerbooking.model;
 
 import javax.persistence.*;
 import java.util.Arrays;
+import java.util.List;
 
 @Entity
 @Table(name = "flowers")
@@ -15,6 +16,12 @@ public class Flower {
 
     @Lob
     private byte[] image;
+
+    /*@OneToMany(mappedBy = "flower")
+    private List<CartItem> cartItems;
+
+    @OneToMany(mappedBy = "flower")
+    private List<OrderItem> orderItems;*/
 
     public Flower() {
     }

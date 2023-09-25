@@ -1,6 +1,7 @@
 package com.flowerbooking.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -18,6 +19,12 @@ public class User {
 
     @Column(name = "user_role",length = 200,nullable = false)
     private String role;
+
+    @OneToOne(mappedBy = "user")
+    private Cart cart;
+
+    @OneToMany(mappedBy = "user")
+    private List<Order> orders;
 
     public User() {
     }

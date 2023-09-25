@@ -39,8 +39,8 @@
         <p class="card-text" th:text="${flowers.name}" style="font-size:20px; text-align:left; margin-top:-15px;"></p>
         <p class="card-text" th:text="${flowers.description}" style="font-size:15px; text-align:left; margin-top:-15px; height:45px;"></p>
         <p class="card-text" th:text="'Rs:' + ${flowers.price}" style="font-size:20px; text-align:left; margin-top:-20px; color:#800080; margin-bottom:5px;"></p>
-        <button style="border-radius:20px; padding:0px 15px 0px 15px; border:2px solid #800080;"><a th:href="@{/flower/{id}(id=${flowers.id})}" style="color:#800080;">Delete</a></button>
-        <button style="border-radius:20px; padding:0px 15px 0px 15px; border:2px solid #800080;"><a th:href="@{/flower/edit/{id}(id=${flowers.id})}" style="color:#800080;">Update</a></button>
+        <button style="border-radius:20px; background-color:white; padding:0px 15px 0px 15px; border:2px solid #800080;"><a th:href="@{/flower/{id}(id=${flowers.id})}" style="color:#800080;">Delete</a></button>
+        <button style="border-radius:20px; background-color:white; padding:0px 15px 0px 15px; border:2px solid #800080;"><a th:href="@{/flower/edit/{id}(id=${flowers.id})}" style="color:#800080;">Update</a></button>
       </div>
     </div>
   </div>
